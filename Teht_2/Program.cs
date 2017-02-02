@@ -4,15 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Teht_1
+namespace Teht_2
 {
     class Program
     {
         static void Main(string[] args)
         {
-            Elevator hissi = new Elevator();
-            hissi.floor = 10;
-            Console.WriteLine(hissi.floor);
+        //jaa
         }
     }
 }
