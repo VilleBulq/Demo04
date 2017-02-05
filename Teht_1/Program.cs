@@ -11,8 +11,18 @@ namespace Teht_1
         static void Main(string[] args)
         {
             Elevator hissi = new Elevator();
-            hissi.floor = 10;
-            Console.WriteLine(hissi.floor);
+            bool working = true;
+            while (working)
+            {
+                Console.WriteLine("Elevator is now in floor: " + hissi.Floor);
+                Console.Write("Give a new floor number(1 - 5) >");
+                int kerros = Int32.Parse(Console.ReadLine());
+                if(kerros == 0) { working = false; }
+                hissi.Floor = kerros;
+            }
+
+
+
         }
     }
 }

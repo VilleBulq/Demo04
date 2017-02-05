@@ -10,15 +10,19 @@ namespace Teht_1
     {
         private int minFloor = 1;
         private int maxFloor = 5;
-        public int floor;
-        private int Floor
+
+        private int floor;
+        public int Floor
         {
             get { return floor; }
             set
             {
                 if (value >= minFloor && value <= maxFloor)
                 {
-                    Floor = value;
+                    floor = value;
+                }
+                else {
+                    Console.WriteLine("Floor is not valid only 1-5 floor");
                 }
             }
         }

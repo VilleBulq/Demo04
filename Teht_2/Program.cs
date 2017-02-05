@@ -10,7 +10,15 @@ namespace Teht_2
     {
         static void Main(string[] args)
         {
-        //jaa
+            bool working = true;
+            Amplifier amp = new Amplifier();
+            while (working)
+            {
+                Console.WriteLine("Amp volume is " + amp.Volume);
+                Console.Write("Give a new volume value >");
+                int vol = Int32.Parse(Console.ReadLine());
+                amp.Volume = vol;
+            }
         }
     }
 }
