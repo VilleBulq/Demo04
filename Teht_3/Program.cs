@@ -10,6 +10,16 @@ namespace Teht_3
     {
         static void Main(string[] args)
         {
+            Employee emp = new Employee();
+            Boss boss = new Boss();
+            emp.Name = "Jaska";
+            boss.Name = "Jaska";
+            emp.Profession = "Ope ";
+            boss.Profession = "CEO";
+            boss.Car = "Audi";
+            Console.WriteLine(boss.ToString());
+            Console.WriteLine(emp.ToString());
+
         }
     }
 }
